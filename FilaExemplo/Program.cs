@@ -20,9 +20,7 @@ class Program
             switch (opcao)
             {
                 case 1:
-                    Console.WriteLine("Digite o nome:");
-                    Pessoa novaPessoa = new Pessoa();
-                    novaPessoa.Nome = Console.ReadLine()!;
+                    Pessoa novaPessoa = fila.CriarFila();
                     fila.InserirPessoa(novaPessoa);
                     break;
                 case 2:

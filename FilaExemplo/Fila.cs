@@ -19,6 +19,14 @@ namespace FilaExemplo
             tail = null;
         }
 
+        public Pessoa CriarFila()
+        {
+            Console.WriteLine("Digite o nome:");
+            Pessoa novaPessoa = new Pessoa();
+            novaPessoa.Nome = Console.ReadLine()!;
+            return novaPessoa;
+        }
+
         public void InserirPessoa(Pessoa novaPessoa)
         {
             if (head == null)
